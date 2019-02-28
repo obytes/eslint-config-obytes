@@ -30,6 +30,8 @@ or to the .eslintrc or .eslintrc.js:
 }
 ```
 
+> Make sure to remove the `.prettierrc` file since we're handling prettier inside the eslint config.
+
 ## Using VSCode
 
 - Install VSCode [ESLint package](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
