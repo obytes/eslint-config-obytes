@@ -39,17 +39,16 @@ or to the .eslintrc or .eslintrc.js:
 
 ```js
 {
-// These are all my auto-save configs
-"editor.formatOnSave": true,
-// turn it off for JS, we will do this via eslint
-"[javascript]": {
-  "editor.formatOnSave": false
-},
-// tell the ESLint plugin to run on save
-"eslint.autoFixOnSave": true,
-// if you are using prettier vscode extension
-"prettier.disableLanguages": [
-  "js"
-],
+  "editor.formatOnSave": true,
+  "javascript.format.enable": false,
+  "prettier.eslintIntegration": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "eslint.autoFixOnSave": true,
+  "prettier.disableLanguages": ["javascript", "javascriptreact"]
 }
 ```
